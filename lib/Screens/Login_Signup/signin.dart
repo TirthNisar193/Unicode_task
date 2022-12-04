@@ -3,7 +3,7 @@
 import 'package:curious_appetite/Screens/NavPages/navbar.dart';
 import 'package:curious_appetite/Screens/Login_Signup/resetpassword.dart';
 import 'package:curious_appetite/Screens/Login_Signup/services.dart';
-import 'package:curious_appetite/Screens/signUp.dart';
+import 'package:curious_appetite/Screens/Login_Signup/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../../components/widgetsgen.dart';
