@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import '../../home_controller.dart';
+import '../../Controllers/home_controller.dart';
 
 class Neubox extends StatefulWidget {
   const Neubox({super.key});

@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'Models/model.dart';
+import '../Models/model.dart';
 
 class HomeController extends GetxController{
   final uid = FirebaseAuth.instance.currentUser!.uid;

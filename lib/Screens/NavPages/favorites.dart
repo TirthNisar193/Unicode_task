@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:like_button/like_button.dart';
 
-import '../../home_controller.dart';
+import '../../Controllers/home_controller.dart';
 
 class Favorites extends StatefulWidget {
   const Favorites({Key? key}) : super(key: key);

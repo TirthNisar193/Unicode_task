@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../Models/cuisines_model.dart';
-import '../cusinies_controller.dart';
+import '../../Controllers/cusinies_controller.dart';
 
 class CuisinesList extends StatefulWidget {
   final String cuisine;

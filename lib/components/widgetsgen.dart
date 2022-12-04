@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:like_button/like_button.dart';
 import 'package:html/parser.dart';
 import '../Models/model.dart';
-import '../home_controller.dart';
+import '../Controllers/home_controller.dart';
 
 hexStringToColor(String hexColor) {
   hexColor = hexColor.toUpperCase().replaceAll("#", "");

@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:curious_appetite/Models/model.dart';
-import 'package:curious_appetite/home_controller.dart';
+import 'package:curious_appetite/Controllers/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../components/widgetsgen.dart';

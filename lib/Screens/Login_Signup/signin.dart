@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_final_fields, prefer_const_constructors, use_build_context_synchronously
 
 import 'package:curious_appetite/Screens/NavPages/navbar.dart';
-import 'package:curious_appetite/Screens/resetpassword.dart';
-import 'package:curious_appetite/Screens/services.dart';
+import 'package:curious_appetite/Screens/Login_Signup/resetpassword.dart';
+import 'package:curious_appetite/Screens/Login_Signup/services.dart';
 import 'package:curious_appetite/Screens/signUp.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import '../components/widgetsgen.dart';
+import '../../components/widgetsgen.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({Key? key}) : super(key: key);
