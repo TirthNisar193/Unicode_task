@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "322685005745",
+    "project_id": "curious-appetite-5d485",
+    "storage_bucket": "curious-appetite-5d485.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322685005745:android:e89f47272560b2cdc99790",
+        "android_client_info": {
+          "package_name": "com.example.curious_appetite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322685005745-k7bj0b5mi7vmirhvii1f5jrvggtjh9ta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.curious_appetite",
+            "certificate_hash": "eba8d6a858d91ab39c42abefe51fc0f861118588"
+          }
+        },
+        {
+          "client_id": "322685005745-ilhres1g7ie4rijrrrmtuskagng47347.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApp3ohfDnoeCxXBofIHLGyMB7t5fiKjWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322685005745-ilhres1g7ie4rijrrrmtuskagng47347.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
