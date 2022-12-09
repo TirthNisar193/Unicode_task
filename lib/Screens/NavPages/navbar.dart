@@ -30,7 +30,10 @@ class _NavBarState extends State<NavBar> {
           actions: <Widget>[
             IconButton(
               onPressed: () {
-                Neubox();
+                 showSearch(
+                    context: context,
+                    delegate: CustomSearchDelegate(),
+                  );
               },
               icon: Icon(Icons.search),
             ),

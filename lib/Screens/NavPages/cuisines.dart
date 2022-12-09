@@ -46,13 +46,6 @@ class _CuisinesPageState extends State<CuisinesPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Text(
-                "Cuisines",
-                style: TextStyle(fontSize: 35, fontWeight: FontWeight.w700),
-              ),
-            ),
             ListView.builder(
               shrinkWrap: true,
               itemCount: cuisinesList.length,

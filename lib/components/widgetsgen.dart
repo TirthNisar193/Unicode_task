@@ -143,7 +143,7 @@ class _RecipeWidgetState extends State<RecipeWidget> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  widget.recipe.title!,
+                  widget.recipe.title.toString(),
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w700,
@@ -242,7 +242,7 @@ class _RecipeInfoState extends State<RecipeInfo> {
                       GestureDetector(
                         onTap: () {
                           homeController.addToWishlist(
-                              recipe: widget.recipefav!);
+                              recipe: widget.recipefav);
                         },
                         child: Container(
                           padding: EdgeInsets.all(12),

@@ -18,16 +18,6 @@ class DrawerMenu extends StatelessWidget {
           UserAccountsDrawerHeader(
             accountName: Text('tirthnisar193'),
             accountEmail: Text('tirthnisar743@gmail.com'),
-            currentAccountPicture: CircleAvatar(
-              child: ClipOval(
-                child: Image.asset(
-                  'assets/images/main_top.png',
-                  fit: BoxFit.cover,
-                  width: 90,
-                  height: 90,
-                ),
-              ),
-            ),
             decoration: BoxDecoration(
               color: Colors.blue,
               image: DecorationImage(

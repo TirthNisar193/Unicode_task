@@ -36,7 +36,6 @@ class _SignInScreenState extends State<SignInScreen> {
                 20, MediaQuery.of(context).size.height * 0.2, 20, 0),
             child: Column(
               children: <Widget>[
-                logoWidget("assets/images/logo1.png"),
                 const SizedBox(
                   height: 30,
                 ),
@@ -52,50 +51,51 @@ class _SignInScreenState extends State<SignInScreen> {
                 ),
                 forgetPassword(context),
                 firebaseUIButton(context, "Sign In", () {
-                  FirebaseAuth.instance
-                      .signInWithEmailAndPassword(
+                  FirebaseAuth.instance.signInWithEmailAndPassword(
                           email: _emailTextController.text,
                           password: _passwordTextController.text)
-                      .then((value) {
+                      /* .then((value) {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => NavBar()));
+                        MaterialPageRoute(builder: (context) => NavBar()) );
                   }).onError((error, stackTrace) {
                     print("Error ${error.toString()}");
-                  });
+                  });*/
+                      ;
                 }),
                 signUpOption(),
                 const SizedBox(
                   height: 20,
                 ),
                 ElevatedButton(
-                    onPressed: () async {
-                      await FirebaseServices().signInWithGoogle();
-                      Navigator.push(context,MaterialPageRoute(builder: (context) => NavBar()));
-                    },
-                    child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      "Assets/images/google.png",
-                      height: 40,
-                      width: 40,
+                  onPressed: () async {
+                    await FirebaseServices().signInWithGoogle();
+                    /* Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => NavBar())); */
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          "Assets/images/google.png",
+                          height: 40,
+                          width: 40,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        const Text(
+                          "Login with Gmail",
+                          style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black87),
+                        ),
+                      ],
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    const Text(
-                      "Login with Gmail",
-                      style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black87),
-                    ),
-                  ],
-                ),
-              ),
-              )
+                  ),
+                )
               ],
             ),
           ),

@@ -12,12 +12,12 @@ class ApiServices {
   RecipesMain? recipesMain;
   List<Recipes>? _recipesList;
 
-  getData() async {
+  getData(String? query) async {
     // ignore: prefer_typing_uninitialized_variables
-    var responseBody;
-    String apiKey = "7c553eb075924085af86feebde5a44b6";
+    /* var responseBody;
+    String apiKey = "507bb005764140038f545eb46fa00224";
     String baseUrl = "https://api.spoonacular.com/recipes";
-    String url = '$baseUrl/random?number=20&apiKey=$apiKey';
+    String url = '$baseUrl/random?number=15&apiKey=$apiKey';
     http.Response response = await http.get(Uri.parse(url));
 
     try {
@@ -38,6 +38,29 @@ class ApiServices {
       return _recipesList;
     } catch (e) {
       debugPrint(e.toString());
+    }
+  } */
+    http.Response response = await http.get(Uri.parse(
+        'https://api.spoonacular.com/recipes/random?apiKey=507bb005764140038f545eb46fa00224&number=20'));
+    try {
+      if (response.statusCode == 200) {
+        var data = jsonDecode(response.body);
+        print(response.statusCode);
+
+        var recipesMain = RecipesMain.fromJson(data);
+        _recipesList = recipesMain.recipes;
+        if (query != null) {
+          _recipesList = _recipesList!
+              .where((element) =>
+                  element.title!.toLowerCase().contains(query.toLowerCase()))
+              .toList();
+        }
+      } else {
+        print(response.statusCode);
+      }
+      return _recipesList;
+    } catch (e) {
+      print(e);
     }
   }
 }
